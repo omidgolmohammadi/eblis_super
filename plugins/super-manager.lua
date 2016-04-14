@@ -638,7 +638,7 @@ function run(msg, matches)
     if not is_chat_msg(msg) then
 	    return ""
 	end
-    local data = load_data(_config.moderation.data)
+    local data = load_data(_config'moderation'data)
     local receiver = get_receiver(msg)
     if msg.media and is_chat_msg(msg) and is_momod(msg) then
     	if msg.media.type == 'photo' and data[tostring(msg.to.id)] then
