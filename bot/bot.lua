@@ -242,7 +242,6 @@ function create_config( )
     "super_manager",
     "lock_url",
     "auto_leave",
-    "antispam",
     "banhammer",
     "moderation",
     "plugins",
